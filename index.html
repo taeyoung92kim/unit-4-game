@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Slime Game!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="slime-container">
+
+        <div class="row">
+            <div class="col-md-4">
+                <h1 id="slime-header">Slime Collector!</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <p id="slime-para">
+                    You will be given a random number at the start of the game.
+                    <br>
+                    <br>
+                    There are four slimes below. By clicking on a slime, you will add a specific amount of points to
+                    your
+                    total
+                    score.
+                    <br>
+                    <br>
+                    You win the game by matching your total score to the random number. You will lose the game if your
+                    total
+                    score goes above the random number.
+                    <br>
+                    <br>
+                    The value of each crystal is hidden from you until you click on it.
+                    <br>
+                    <br>
+                    Every time when the game starts, the game will change the value of each crystal.
+                </p>
+            </div>
+        </div>
+
+        <div class="row score-text">
+            <div class="col-md-2">
+                <p id="goal-text"></p>
+            </div>
+            <div class="col-md-2 winlose-text">
+                <p id="win-text"></p>
+                <p id="lose-text"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <!-- I was trying to add a value attribute to each of the images below, but that didn't seem to help either. For testing purposes, I am adding a manual value, but the value should be randomized and coming from the javascript page -->
+                <img id="crystal" class="slime" src="assets/images/crystalslime.jpg" height="75px" width="75px" value="10">
+            </div>
+            <div class="col-md-2">
+                <img id="fire" class="slime" src="assets/images/fireslime.jpg" height="75px" width="75px" value="15">
+            </div>
+            <div class="col-md-2">
+                <img id="rock" class="slime" src="assets/images/rockslime.jpg" height="75px" width="75px" value="5">
+            </div>
+            <div class="col-md-2">
+                <img id="tangle" class="slime" src="assets/images/tangleslime.jpg" height="75px" width="75px" value="20">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <p id="totalScore-text">Your total score is:</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <p id="totalScore"></p>
+            </div>
+        </div>
+
+    </div>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

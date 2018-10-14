@@ -1,0 +1,57 @@
+.slime-container{
+    width: 960px;
+    margin: 10px;
+}
+#slime-header{
+    margin: 5px;
+    padding: 5px;
+    background: orange;
+    text-align: center;
+    font-style: oblique;
+    border: 2px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#slime-para{
+    margin: 5px;
+    padding: 5px;
+    background: gray;
+    text-align: center;
+    font-style: oblique;
+    border: 2px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#goal-text{
+    margin-left: 5px;
+    padding: 2px;
+    height: 100px;
+    background: lightblue;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid black;
+}
+.winlose-text{
+    padding: 2px;
+    height: 100px;
+    background: lightgreen;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid black;
+}
+#totalScore-text{
+    margin-left: 5px;
+    padding: 2px;
+    height: 30px;
+    background: cyan;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid black;
+}
+#totalScore{
+    margin-left: 5px;
+    padding: 2px;
+    height: 100px;
+    background: cyan;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid black;
+}
