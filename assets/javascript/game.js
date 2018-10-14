@@ -38,6 +38,10 @@ $(document).ready(function () {
         // $("slimeArray[i]").setAttribute("value", 10);
     };
 
+
+    //All the commented out code was various attempts to try and get randomized values and to assign them to my images on my HTML. Nothing I tried work and unfortunately, I ran out of time to figure it out.
+
+
     // slimeObject.crystal.value = Math.floor(Math.random() * 20);
     // slimeObject.fire.value = Math.floor(Math.random() * 20);
     // slimeObject.rock.value = Math.floor(Math.random() * 20);
